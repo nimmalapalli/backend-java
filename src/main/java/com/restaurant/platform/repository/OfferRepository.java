@@ -1,0 +1,1 @@
+package com.restaurant.platform.repository; import org.springframework.data.mongodb.repository.MongoRepository; import com.restaurant.platform.model.Offer; import java.util.*; public interface OfferRepository extends MongoRepository<Offer,String>{List<Offer> findAllByActiveTrue();}

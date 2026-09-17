@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: restaurant-platform-backend
+
+  data:
+    mongodb:
+      uri: mongodb+srv://brahma:reddy123@luffycluster.czvoxe0.mongodb.net/restaurant_platform?retryWrites=true&w=majority&appName=LuffyCluster
+      auto-index-creation: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+app:
+  cors:
+    origins: http://localhost:4200,http://localhost:53788, http://localhost:61100,http://localhost:4400
+
+  seed:
+    enabled: true

@@ -1,0 +1,1 @@
+package com.restaurant.platform.repository; import org.springframework.data.mongodb.repository.MongoRepository; import com.restaurant.platform.model.Modifier; public interface ModifierRepository extends MongoRepository<Modifier,String>{}
